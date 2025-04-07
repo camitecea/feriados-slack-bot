@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import json
 import os
 
-modo_prueba = True  # Cambiar a True para pruebas manuales
+modo_prueba = False  # Cambiar a True para pruebas manuales
 
 API_KEY = os.getenv('CALENDARIFIC_API_KEY')
 SLACK_WEBHOOK = os.getenv('SLACK_WEBHOOK_URL')
@@ -62,7 +62,7 @@ for codigo, nombre in COUNTRIES.items():
     obtener_feriados(codigo, nombre)
 
 # Mensaje de test opcional
-if modo_prueba:
-    enviar_a_slack("🧪 *Modo prueba activado:* Este es un mensaje de test para confirmar que el bot funciona correctamente.")
+#if modo_prueba:
+    #enviar_a_slack("🧪 *Modo prueba activado:* Este es un mensaje de test para confirmar que el bot funciona correctamente.")
 
 
