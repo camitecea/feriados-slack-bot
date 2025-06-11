@@ -24,3 +24,6 @@ jobs:
           CALENDARIFIC_API_KEY: ${{ secrets.CALENDARIFIC_API_KEY }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python main.py
+
+
+      # Reactivado después de 60 días de inactividad
